@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sarabun", sans-serif;
+    background-color: #f5f5f5;
+    justify-content: center;
+}
+
+/* Header starts here */
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #6960ff;
+    padding: 1rem 10%;
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar ul li {
+    margin-right: 20px;
+}
+
+.navbar ul li a {
+    font-family: "Sarabun", sans-serif;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s;
+    color: #323842;
+}
+
+.navbar ul li a:hover {
+    color: #004d5a;
+}
+
+.logo {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+/* Header section ends here */
+
+/* Portfolio starts here */
+h1 {
+    font-family: "Sarabun", sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #323842;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    background: #6860ffe1;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+span {
+    color: #006e7f;
+}
+
+.welcome-section {
+    display: flex;
+    justify-content: center;
+    font-family: "Sarabun", sans-serif;
+    margin: 1rem 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 300;
+}
+
+.heading {
+    padding: 20px 20px;
+    color: #333;
+    font-size: 50px;
+    text-align: left;
+    word-spacing: 5px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+#link {
+    font-family: "Sarabun", sans-serif;
+    padding: 15px;
+    text-decoration: none;
+    list-style-type: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #39357e;
+    border-radius: 81px;
+}
+
+.image-section {
+    width: 85%;
+    border-radius: 50%;
+}
+
+.welcome-section h5 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    height: 100vh;
+    animation: fadeInUp 6s ease forwards;
+    opacity: 0;
+}
+
+.about {
+    display: flex;
+    flex-basis: content;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#about-image {
+    align-items: last baseline;
+    width: 100%;
+    height: 70%;
+}
+
+.profile-text {
+    display: flex;
+    font-family: "Sarabun", sans-serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 600px;
+}
+
+#about-content {
+    font-family: "Sarabun", sans-serif;
+    font-weight: 700;
+    color: #323842;
+    justify-content: center;
+    padding-bottom: 12px;
+}
+
+.paragraphy {
+    display: flex;
+    flex-basis: 1;
+    font-family: "Sarabun", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: #444;
+    /* border: 1px solid green; */
+}
+
+/* Keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-tile img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+/* Button Styles */
+.button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    color: #fff;
+    background-color: #006e7f;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.button:hover {
+    background-color: #004d5a;
+    transform: translateY(-2px);
+}
+
+
+/* project section */
+#project-title{
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.span {
+    font-family: "Sarabun", sans-serif;
+    color: #6960ff;
+}
+
+.project-tile{
+    padding-left: 55px;
+    background: none;
+    justify-content: center;
+}
+
+.project-intro{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    justify-content: space-evenly;
+    background-color: #E8E8E8;
+}
+
+.project-content{
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+#project-tile{
+    font-family: "Sarabun", sans-serif;
+    color: #6960ff;
+    text-decoration: none;
+    font-weight: 700;
+    padding-left: 4rem;
+}
+
+#contact{
+	height: 30vh;
+    background: #6960ff;
+}
+
+.contact-section {
+	width: 90%;
+	margin: auto;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.contact-section > h2 {
+    padding-top: 20px;
+	font-weight: 700;
+	margin: 0.5rem 0rem 1.25rem;
+}
+
+.icon-links{
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.contact-icons {
+    font-size: 500%;
+	margin: .99rem;
+    color: #fff;
+    width: 5%;
+    border-radius: 50%;
+}
+
+.footer-item {
+	text-align: center;
+	padding: 3rem;
+	background-color: #1D2128;
+	width: 90%;
+	margin: auto;
+}
+ 
+.item{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.item, a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.item-paragraphy{
+    color: #fff;
+    text-align: center;
+    background-color: #1D2128;
+}
